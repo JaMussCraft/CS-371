@@ -21,7 +21,7 @@ Please specify the group members here
 
 # Student #1: Sing Hieng (James) Wong
 # Student #2: Ayah Abdeldayem
-# Student #3: Hannah Lynn
+# Student #3: Hannah Hale
 
 */
 
