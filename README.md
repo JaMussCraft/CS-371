@@ -31,6 +31,7 @@ gcc -o pa2_task1 pa2_task1.c -pthread
 ```
 
 ### Running Clients
-```bash
-./pa2_task1 client 127.0.0.1 12345 4 1000000
+```bash 
+# this should led to packet loss half the time
+./pa2_task1 client 127.0.0.1 12345 15000 5 
 ```
