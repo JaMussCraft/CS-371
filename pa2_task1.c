@@ -101,11 +101,11 @@ void *client_thread_func(void *arg)
             exit(EXIT_FAILURE);
         }
 
-        // if (nfds == 0)
-        // {
-        //     // timeout (packet loss)
-        //     continue;
-        // }
+        if (nfds == 0)
+        {
+            // timeout (packet loss)
+            continue;
+        }
 
         ssize_t rcv = recvfrom(data->socket_fd, read_buf, MESSAGE_SIZE, 0, NULL, NULL);
         if (rcv == MESSAGE_SIZE) // only count complete messages
@@ -258,6 +258,7 @@ void run_server()
         if (nfds == 0)
         {
             // timeout = packet loss
+            printf("packet loss...\n");
             continue;
         }
 
